@@ -13,11 +13,4 @@ JavaScript/** linguist-detectable=true
 Python/**     linguist-language=Python
 Python/**     linguist-detectable=true
 
-node_modules/** linguist-vendored
-dist/**         linguist-generated
-build/**        linguist-generated
-vendor/**       linguist-vendored
-*.min.js        linguist-generated
-JavaScript/PongGame/p5.js linguist-vendored
-JavaScript/PongGame/p5.sound.min.js linguist-vendored
-JavaScript/PongGame/*.map linguist-generated
+**/PongGame/** linguist-vendored
