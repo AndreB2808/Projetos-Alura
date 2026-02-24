@@ -1,0 +1,14 @@
+C/**          linguist-language=C
+C/**          linguist-detectable=true
+
+HTML/**       linguist-language=HTML
+HTML/**       linguist-detectable=true
+
+Java/**       linguist-language=Java
+Java/**       linguist-detectable=true
+
+JavaScript/** linguist-language=JavaScript
+JavaScript/** linguist-detectable=true
+
+Python/**     linguist-language=Python
+Python/**     linguist-detectable=true
