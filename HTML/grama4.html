@@ -1,0 +1,33 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+    pincel.fillStyle = 'white';
+    pincel.fillRect(0, 0, 600, 400);
+
+    function Baller(x, y, c){
+
+        pincel.fillStyle = 'lime';
+        pincel.beginPath();
+        pincel.arc(x, y, c, 0, 2 * Math.PI);
+        pincel.fill();
+    }
+
+    function clear() {
+
+    pincel.clearRect(0, 0, 600, 400);   
+ 
+    }
+
+    var x = 20;
+    function updte() {
+        clear();
+        Baller(x, 20, 10);
+        x++;
+    }
+
+    setInterval(updte, 1)
+
+</script>

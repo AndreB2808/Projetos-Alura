@@ -1,0 +1,27 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+
+	function desenhaQ(x, y, cor) {
+		
+	var tela = document.querySelector('canvas');
+	var pincel = tela.getContext('2d');
+
+	pincel.fillStyle = cor;
+	pincel.fillRect(x, y, 50, 50,);
+	pincel.fillStroke = 'black';
+	pincel.strokeRect(x, y, 50, 50);
+
+	}
+	
+	desenhaQ(0, 0, 'blue');
+	desenhaQ(50, 0, 'lime');	
+	desenhaQ(100, 0, 'red');
+	desenhaQ(0, 50, 'lime');
+	desenhaQ(50, 50, 'yellow');
+	desenhaQ(100, 50, 'purple');
+	desenhaQ(0, 100, 'red');
+	desenhaQ(50, 100, 'purple');
+	desenhaQ(100, 100, 'blue');
+</script>

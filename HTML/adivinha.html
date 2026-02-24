@@ -1,0 +1,44 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+    	document.write("<br><br>")
+
+    }
+
+    function mostra(vaca) {
+
+    	document.write(vaca);
+		pulaLinha();
+    }
+
+    function sorteia(boi) {
+        return Math.round(Math.random() * boi);
+    }
+
+    var numberP = sorteia(10);
+    console.log(numberP);
+
+    var eba = 1;
+
+    while(eba <= 3) {
+    var chute = parseInt(prompt("Digite o seu chute:"));
+
+    if(chute == numberP) {
+        mostra("Você acerto, ah mizeravi!");
+        break;
+    } 
+    if(chute > numberP) {
+        mostra("ERRRRROU! Você chutou maior.");
+    }
+    
+    if(chute < numberP) {
+        mostra("ERRRRROU! Você chutou menor.");
+        }
+        eba++;
+    }
+
+    mostra("END")
+</script>
